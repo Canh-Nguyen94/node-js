@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog <%= title %></title>
+</head>
+<body>
+    <h1>Home</h1>
+    <h2>Coming home now</h2>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/blogs/create"> New Blog</a>
+    </nav>
+    <form action="/blogs" method="POST">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" required>
+        <label for="snippet">Snippet</label>
+        <input type="text" id="snippet" name="snippet" required>
+        <label for="body">Body</label>
+        <textarea type="text" id="body" name="body" required></textarea>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
