@@ -8,17 +8,13 @@ const app = express();
 
 const dbURI =
   "mongodb+srv://canh:test123456@learn-node.xslr6.mongodb.net/KevinDb1?retryWrites=true&w=majority";
-
-
-
-
+//test again
 
 mongoose
   .connect(dbURI, { useUnifiedTopology: true })
   .then((result) => app.listen(5000))
   .catch((err) => console.log(err));
 app.set("view engine", "ejs");
-
 
 app.use(express.urlencoded());
 
